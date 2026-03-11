@@ -1,0 +1,9 @@
+# robots.txt para Perruquers Mora
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://perruquers-mora.vercel.app/sitemap.xml
+
+# Crawl-delay (opcional, para servidores lentos)
+# Crawl-delay: 1

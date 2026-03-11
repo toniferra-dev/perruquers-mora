@@ -1,0 +1,41 @@
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Vercel
+.vercel
+.vercel/**
+
+# Claude Code
+.agents
+.claude
+skills-lock.json
+
+# Development files - Carpetas de diseño originales
+paginas/
+imagenes/
+
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+
+# Temporary files
+/tmp
+*.tmp
+*.temp
