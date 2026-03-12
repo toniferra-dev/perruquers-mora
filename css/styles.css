@@ -237,6 +237,8 @@ p {
 
 .brand-name {
   color: var(--color-dark);
+  font-weight: 200;
+  font-size: 2rem;
   display: block;
 }
 
