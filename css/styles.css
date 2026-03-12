@@ -78,12 +78,9 @@ p {
 
 /* Header */
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  
   background: var(--color-white);
-  z-index: 1000;
+  
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
   animation: slideDown 0.6s ease-out;
 }
@@ -182,7 +179,6 @@ p {
 
 /* Hero Section */
 .hero {
-  margin-top: 120px;
   min-height: 50vh;
   display: flex;
   align-items: center;
@@ -796,7 +792,6 @@ p {
   }
 
   .hero {
-    margin-top: 160px;
     background-attachment: scroll;
   }
 }
