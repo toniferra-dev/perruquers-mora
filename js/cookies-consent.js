@@ -314,20 +314,44 @@ class CookieConsent {
   }
 
   enablePerformanceCookies() {
-    // Ejemplo: Google Analytics, etc.
     console.log('Cookies de rendimiento habilitadas');
-    // Aquí se cargarían scripts como Google Analytics
-    // Ejemplo:
-    // if (typeof gtag !== 'undefined') {
-    //   gtag('consent', 'update', {
-    //     'analytics_storage': 'granted'
-    //   });
-    // }
+
+    // Cargar Vercel Analytics
+    this.loadVercelAnalytics();
   }
 
   disablePerformanceCookies() {
     console.log('Cookies de rendimiento deshabilitadas');
     // Aquí se deshabilitarían scripts de análisis
+  }
+
+  loadVercelAnalytics() {
+    // Evitar cargar múltiples veces
+    if (window.va || document.querySelector('script[data-vercel-analytics]')) {
+      console.log('Vercel Analytics ya está cargado');
+      return;
+    }
+
+    // Cargar el script de Vercel Analytics
+    const script = document.createElement('script');
+    script.src = 'https://cdn.vercel-insights.com/v1/script.js';
+    script.defer = true;
+    script.setAttribute('data-vercel-analytics', 'true');
+
+    script.onload = () => {
+      console.log('Vercel Analytics cargado correctamente');
+
+      // Inicializar manualmente si es necesario
+      if (window.va) {
+        window.va('pageview');
+      }
+    };
+
+    script.onerror = () => {
+      console.error('Error al cargar Vercel Analytics');
+    };
+
+    document.head.appendChild(script);
   }
 
   enablePersonalizationCookies() {

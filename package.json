@@ -14,5 +14,8 @@
   "type": "commonjs",
   "devDependencies": {
     "vercel": "^50.32.2"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
   }
 }
