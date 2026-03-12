@@ -183,7 +183,7 @@ p {
 /* Hero Section */
 .hero {
   margin-top: 120px;
-  min-height: 85vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
   position: relative;
@@ -200,8 +200,8 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(245, 237, 228, 0.90) 50%, rgba(255, 255, 255, 0.70) 100%);
-  z-index: 1;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(245, 237, 228, 0.90) 50%, rgba(255, 255, 255, 0.4) 100%);
+  z-index:1;
 }
 
 .hero-content {
