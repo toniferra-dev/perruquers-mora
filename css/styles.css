@@ -449,7 +449,7 @@ p {
 /* Gallery Section */
 .gallery-banner {
   width: 100%;
-  height: 280px;
+  height: 30vh;
   background: var(--color-primary);
   margin: 3rem 0;
   overflow: hidden;
