@@ -2,6 +2,11 @@
 
 Sitio web oficial de Perruquers Mora, peluquería en Palma de Mallorca con tres generaciones de experiencia.
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/toniferra-dev/perruquers-mora)
+![Auto-Deploy](https://img.shields.io/badge/auto--deploy-enabled-success)
+
+**🔗 Sitio en vivo:** [https://perruquers-mora.vercel.app](https://perruquers-mora.vercel.app)
+
 ## Descripción
 
 Sitio web elegante y profesional que refleja la calidad y el compromiso de Perruquers Mora con productos naturales AVEDA.
